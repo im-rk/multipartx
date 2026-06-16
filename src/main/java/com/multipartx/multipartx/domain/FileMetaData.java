@@ -2,11 +2,13 @@ package com.multipartx.multipartx.domain;
 
 import com.multipartx.multipartx.domain.enums.UploadStatus;
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name="file_metadata")
+@Data
 public class FileMetaData {
 
     @Id
